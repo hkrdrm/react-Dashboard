@@ -1,0 +1,21 @@
+/* Base Application Styles */
+body {
+	background-color: #f3efd6;
+}
+.index img {
+  margin: 40px auto;
+  border-radius: 4px;
+  background: #fff;
+  display: block;
+}
+
+.content {
+  padding: 25px;
+  color: #000;
+  margin: 0 auto;
+  width: 300px;
+}
+
+a {
+	text-decoration: none;
+}
