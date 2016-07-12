@@ -7,7 +7,7 @@ import Home from './components/Home';
 // Render the main component into the dom
 ReactDOM.render(
    <Router history={browserHistory}>
-     <Route path='/' component={App}>
+     <Route path='/dashboard/' component={App}>
        <IndexRoute component={Home} />
 
      </Route>

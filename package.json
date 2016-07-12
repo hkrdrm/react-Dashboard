@@ -1,5 +1,5 @@
 {
-  "name": "telapexControlPanel",
+  "name": "reactDashboard",
   "private": true,
   "version": "0.0.1",
   "description": "A control panel for Admins to change settings across the telapex internal web app.",
@@ -8,8 +8,6 @@
     "clean": "rimraf dist/*",
     "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist/",
     "dist": "npm run copy & webpack --env=dist",
-    "dist_tpiapp1": "npm run dist & node copy_to_tpiapp1.js",
-    "copy:tpiapp1": "node copy_to_tpiapp1.js",
     "copy:local": "node copy_to_localhost.js",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
@@ -77,6 +75,7 @@
     "pushstate-server": "^1.8.1",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-grid-layout": "^0.12.7",
     "react-router": "^2.4.1",
     "react-tap-event-plugin": "^1.0.0",
     "superagent": "^2.0.0-alpha.3"

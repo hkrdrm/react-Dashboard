@@ -1,6 +1,6 @@
 /* Base Application Styles */
 body {
-	background-color: #f3efd6;
+	background-color: #727272;
 }
 .index img {
   margin: 40px auto;
@@ -18,4 +18,10 @@ body {
 
 a {
 	text-decoration: none;
+}
+.main {
+  position:   relative;
+  margin:    0 auto;
+  text-align: center;
+  padding:   10px;
 }

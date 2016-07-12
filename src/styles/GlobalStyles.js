@@ -15,7 +15,7 @@ const Styles = {
   },
   SubHeader: {
     marginTop: '0px',
-    backgroundColor: '#2fa4e7',
+    backgroundColor: '#3F51B5',
     color: '#fff'
   },
   InnerLeft: {

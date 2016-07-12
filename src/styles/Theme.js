@@ -11,9 +11,6 @@ export default {
   fontFamily: 'Roboto, sans-serif',
   muiTheme: React.PropTypes.object,
   palette: {
-    primary1Color: '#2fa4e7'//, //primary app bar, secondary button
-  /*  primary2Color: '#9a161a',
-    accent1Color:  '#9a161a', //primary raised button
-    accent2Color:  '#9a161a'*/
+    primary1Color: '#303F9F', //primary app bar, secondary button
   }
 };
