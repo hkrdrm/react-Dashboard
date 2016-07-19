@@ -7,8 +7,10 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { grey200 } from 'material-ui/styles/colors';
 import Styles from '../styles/GlobalStyles';
 import Widget from './Widget';
-import Accounts from './Accounts';
-import Tickets from './Tickets';
+import Accounts from './charts/Accounts';
+import Tickets from './charts/Tickets';
+import Payments from './charts/Payments';
+import ResponsiveLayout from './ResponsiveLayout';
 import rd3 from 'rd3';
 var WidthProvider = require('react-grid-layout').WidthProvider;
 var Responsive = require('react-grid-layout').Responsive;
@@ -24,37 +26,29 @@ class AppComponent extends React.Component {
   render() {
 
 
-    var layout = [
-      {i: 'a', x: 0, y: 0, w: 2, h: 12},
-      {i: 'b', x: 3, y: 0, w: 2, h: 12},
-      {i: 'c', x: 6, y: 0, w: 2, h: 12}
-    ];
 
     return (
       <div className='main'>
-      <ResponsiveReactGridLayout className="layout" layout={layout} breakpoints={{lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0}}
-      cols={{lg: 12, md: 10, sm: 6, xs: 4, xxs: 2}}>
 
-        <div key={'a'}>
-          <Widget title='Tickets'>
+        <Widget title='Tickets'>
             <Tickets /> 
-          </Widget>
-        </div>
+        </Widget>
 
-        <div key={'b'}>
-          <Widget title='Accounts'>
-            <Accounts width={250}  height={250}  />
-          </Widget>
-        </div>
-
-        <div key={'c'}>
-          <Widget title='Accounts'>
-            <Accounts width={250} height={250}  />
-          </Widget>
-        </div>
+        <Widget title='Accounts'>
+            <Accounts width={400}  height={250}  />
+        </Widget>
         
-      </ResponsiveReactGridLayout>
+        <Widget title='Total Payments'>
+          <Payments width={400}  height={250}  />
+        </Widget>
 
+        <Widget title='Web Payments'>
+          <Payments width={400}  height={250}  />
+        </Widget>
+
+        <Widget title='Website Hits'>
+            <Tickets /> 
+        </Widget>
       </div>
     );
   }

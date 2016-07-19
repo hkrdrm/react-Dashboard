@@ -2,9 +2,7 @@ require('normalize.css');
 require('styles/App.css');
 
 import React from 'react';
-import CeruleanTheme from '../styles/Theme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import Styles from '../styles/GlobalStyles';
 import AppBar from 'material-ui/AppBar';
 import Paper from 'material-ui/Paper';
 import rd3 from 'rd3';
@@ -16,9 +14,6 @@ injectTapEventPlugin();*/
 
 class AppComponent extends React.Component {
 
-  getChildContext() {
-      return { muiTheme: getMuiTheme(CeruleanTheme) };
-  }
 
   render() {
     var BarChart = rd3.BarChart
